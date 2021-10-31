@@ -4,9 +4,6 @@ A fast, free and multi-account splinterlands bot.
 - Forked from: https://github.com/PCJones/ultimate-splinterlands-bot
 - Based on https://github.com/alfficcadenti/splinterlands-bot
 
-## Preamble 
-I don't know much about coding, so please don't mind how I'm coding it
-
 ## Actual Features
 - Multiple accounts with only one instance
 - Login via Email or Username
@@ -22,7 +19,7 @@ I don't know much about coding, so please don't mind how I'm coding it
 
 # Support / Community
 
-Coming soon...
+https://discord.gg/8Kf3wuta5Z
 
 ## How to install
 - Download and install [NodeJs](https://nodejs.org/it/download/)
