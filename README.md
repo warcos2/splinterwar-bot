@@ -1,4 +1,4 @@
-# SplinterWar Bot
+# Delta Splinterlands Bot
 A fast, free and multi-account splinterlands bot.
 
 - Forked from: https://github.com/PCJones/ultimate-splinterlands-bot
