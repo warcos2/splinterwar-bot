@@ -135,10 +135,26 @@ async function createBrowsers(count, headless) {
     for (let i = 0; i < count; i++) {
         const browser = await puppeteer.launch({
                 headless: headless,
-                args: process.env.CHROME_NO_SANDBOX === 'false' ? ["--no-sandbox"] : ['--disable-web-security',
-                    '--disable-features=IsolateOrigins',
-                    ' --disable-site-isolation-trials'],
-            });
+                args: ['--no-sandbox',
+        '--disable-setuid-sandbox',
+        //'--disable-dev-shm-usage',
+        // '--disable-accelerated-2d-canvas',
+        // '--disable-canvas-aa', 
+        // '--disable-2d-canvas-clip-aa', 
+        // '--disable-gl-drawing-for-tests', 
+        // '--no-first-run',
+        // '--no-zygote', 
+        // '--disable-dev-shm-usage', 
+        // '--use-gl=swiftshader', 
+        // '--single-process', // <- this one doesn't works in Windows
+        // '--disable-gpu',
+        // '--enable-webgl',
+        // '--hide-scrollbars',
+        '--mute-audio',
+        // '--disable-infobars',
+        // '--disable-breakpad',
+        '--disable-web-security']
+    }); 
         const page = await browser.newPage();
         await page.setDefaultNavigationTimeout(500000);
         await page.on('dialog', async dialog => {
