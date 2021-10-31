@@ -1,8 +1,8 @@
 # SplinterWar Bot
 A fast, free, multi-account splinderlands bot
 
-Forked from: https://github.com/PCJones/ultimate-splinterlands-bot
-Based on https://github.com/alfficcadenti/splinterlands-bot
+- Forked from: https://github.com/PCJones/ultimate-splinterlands-bot
+- Based on https://github.com/alfficcadenti/splinterlands-bot
 
 ## Preamble 
 I don't know much about coding, so please don't mind how I'm coding it
