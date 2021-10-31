@@ -1,15 +1,13 @@
-# Ultimate Splinterlands Bot by PC Jones
+# SplinterWar Bot
 A fast, free, multi-account splinderlands bot
 
+Forked from: https://github.com/PCJones/ultimate-splinterlands-bot
 Based on https://github.com/alfficcadenti/splinterlands-bot
 
 ## Preamble 
-Right now the code is a mess - I just hacked something together so I can release this asap. I'm planning on updating the code soon. 
+I don't know much about coding, so please don't mind how I'm coding it
 
-Feel free to give suggestions for features/code refurbishing via github or on discord/telegram.
-
-
-## New Features
+## Actual Features
 - Multiple accounts with only one instance
 - Login via Email or Username
 - Better Team Selection - the bot will chose cards with best win rate, not the ones that are most used
@@ -17,21 +15,19 @@ Feel free to give suggestions for features/code refurbishing via github or on di
 - Minimum Energy Capture Rate - the bot will pause automatically if the energy capture rate is below a specified percentage
 - Option to enable/disable automatic quest reward chest opening
 - Support for the private API of the original bot
+
+## Next Features
 - **Coming Soon**: Individual wait time for each account (right now it will battle with all accounts and wait after that) (aka **Multithreading**)
 - **Coming Soon**: Statistics on how each account is performing
-- Any suggestions?
 
 # Support / Community
 
-[Discord](
-https://discord.gg/hwSr7KNGs9)
-
-[Telegram](https://t.me/ultimatesplinterlandsbot) 
+Coming soon...
 
 ## How to install
 - Download and install [NodeJs](https://nodejs.org/it/download/)
-- Download the [bot](https://github.com/PCJones/ultimate-splinterlands-bot/archive/refs/heads/master.zip) (extract if its .zip)
-- Create .env file (see .env-example)
+- Download the [bot](https://github.com/warcos2/splinterwar-bot) (extract if its .zip)
+- Edit .env file (using notepad or nano)
 - On windows: Execute `install.bat` in bot folder
 - On MacOS/Linux: open terminal in bot folder and execute command `npm install`
 
@@ -45,11 +41,11 @@ Configuration with default values:
 
 - `QUEST_PRIORITY=true` Disable/Enable quest priority
 
-- `MINUTES_BATTLES_INTERVAL=30` Sleep time before the bot will fight with all accounts again. Subtract 2-3 minutes per account
+- `MINUTES_BATTLES_INTERVAL=5` Sleep time before the bot will fight with all accounts again. Subtract 2-3 minutes per account
 
-- `ERC_THRESHOLD=80` If your energy capture rate goes below this the bot will stop fighting with this account until it's above again. Set to 0 to disable
+- `ERC_THRESHOLD=75` If your energy capture rate goes below this the bot will stop fighting with this account until it's above again. Set to 0 to disable
 
-- `CLAIM_SEASON_REWARD=false` Disable/Enable season reward claiming
+- `CLAIM_SEASON_REWARD=true` Disable/Enable season reward claiming
 
 - `CLAIM_QUEST_REWARD=true` Disable/Enable quest reward claiming
 
@@ -73,13 +69,11 @@ Configuration with default values:
 
 # Donations
 
-In case you want to donate to me for updating this bot, I would be very happy! Please also consider donating to the original bot creator.
+In case you want to donate to me for updating this bot, I would be very happy!
 
-- DEC into the game to the player **pcjones** 
-- Bitcoin 3KU85k1HFTqCC4geQz3XUFk84R6uekuzD8
-- Ethereum 0xcFE8c78F07e0190EBdD9077cF9d9E3A8DCED8d91 
-- WAX to account **lshru.wam** (please copy the name)
-- Text me on Discord or Telegram for anything other
+Coming soon...
+
+Please also consider donating to the original bot creator.
 
 # FAQ
 **Can I have some accounts that login via email and some via username?**
