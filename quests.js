@@ -19,7 +19,7 @@ const getQuestSplinter = (questName) => {
     return playerQuest.element;
 }
 
-const getPlayerQuest = (username) => (fetch(`https://game-api.splinterlands.io/players/quests?username=${username}`,
+const getPlayerQuest = (username) => (fetch(`https://api2.splinterlands.com/players/quests?username=${username}`,
   { "credentials": "omit", "headers": { "accept": "application/json, text/javascript, */*; q=0.01" }, "referrer": `https://splinterlands.com/?p=collection&a=${username}`, "referrerPolicy": "no-referrer-when-downgrade", "body": null, "method": "GET", "mode": "cors" })
   .then(x => x && x.json())
   .then(x => {
@@ -28,8 +28,8 @@ const getPlayerQuest = (username) => (fetch(`https://game-api.splinterlands.io/p
           return questDetails;
         }})
    .catch(() => {
-    console.log('Error: game-api.splinterlands did not respond trying api.slinterlands... ');
-    fetch(`https://api2.splinterlands.com/players/quests?username=${username}`,
+    console.log('Error: api2.splinterlands did not respond trying game-api.slinterlands... ');
+    fetch(`https://game-api.splinterlands.io/players/quests?username=${username}`,
       { "credentials": "omit", "headers": { "accept": "application/json, text/javascript, */*; q=0.01" }, "referrer": `https://splinterlands.com/?p=collection&a=${username}`, "referrerPolicy": "no-referrer-when-downgrade", "body": null, "method": "GET", "mode": "cors" })
       .then(x => x && x.json())
       .then(x => {
