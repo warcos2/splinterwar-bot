@@ -3,3 +3,4 @@ logins/
 .env
 log.txt
 README.md
+.gitignore
