@@ -2,3 +2,4 @@ node_modules/
 logins/
 .env
 log.txt
+README.md
