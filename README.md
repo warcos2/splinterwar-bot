@@ -1,8 +1,8 @@
-# Delta Splinterlands Bot
-A fast, free and multi-account splinterlands bot.
+# SplinterWar Bot
+A multi-account bot for playing splinterlands. 100% free and open source.
 
-- Forked from: https://github.com/PCJones/ultimate-splinterlands-bot
 - Based on https://github.com/alfficcadenti/splinterlands-bot
+- And: https://github.com/PCJones/ultimate-splinterlands-bot
 
 ## Actual Features
 - Multiple accounts with only one instance
