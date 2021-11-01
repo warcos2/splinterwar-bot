@@ -4,7 +4,7 @@ A multi-account bot for playing splinterlands. 100% free and open source.
 - Based on https://github.com/alfficcadenti/splinterlands-bot
 - And: https://github.com/PCJones/ultimate-splinterlands-bot
 
-## Important:
+## IMPORTANT:
 Currently there are 2 branches:
 - Master (this one): better overall stability and performance, but less updates.
 - Beta: more updates, but may have some bugs and degraded performance.
