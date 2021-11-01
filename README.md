@@ -29,6 +29,7 @@ Currently there are 2 branches:
 ## How to install
 - Download and install [NodeJs](https://nodejs.org/it/download/)
 - Download the [bot](https://github.com/warcos2/splinterwar-bot) (extract if its .zip)
+- If linux, git clone --branch beta https://github.com/warcos2/splinterwar-bot
 - Edit .env file (using notepad or nano)
 - On windows: Execute `install.bat` in bot folder
 - On MacOS/Linux: open terminal in bot folder and execute command `npm install`
