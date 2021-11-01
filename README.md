@@ -19,7 +19,7 @@ A multi-account bot for playing splinterlands. 100% free and open source.
 
 # Support / Community
 
-https://discord.gg/8Kf3wuta5Z
+[Discord](https://discord.gg/8Kf3wuta5Z)
 
 ## How to install
 - Download and install [NodeJs](https://nodejs.org/it/download/)
