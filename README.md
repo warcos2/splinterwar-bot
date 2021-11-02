@@ -72,8 +72,7 @@ Configuration with default values:
 # Donations
 
 In case you want to donate to me for updating this bot, I would be very happy!
-
-Coming soon...
+Donate DEC/SPS/CARDS to my main account: **wardev**
 
 Please also consider donating to the original bot creator.
 
