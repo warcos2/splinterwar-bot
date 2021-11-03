@@ -19,18 +19,8 @@ let questRewardAll = [];
 let finalRateAll = [];
 
 async function checkForUpdate() {
-    await misc.writeToLogNoUsername('------------------------------------------------------------------------------------------------');
-    await fetch('http://jofri.pf-control.de/prgrms/splnterlnds/version.txt')
-    .then(response => response.json())
-    .then(newestVersion => {
-        if (newestVersion > version) {
-            misc.writeToLogNoUsername('New Update! Please download on https://github.com/PCJones/ultimate-splinterlands-bot');
-            misc.writeToLogNoUsername('New Update! Please download on https://github.com/PCJones/ultimate-splinterlands-bot');
-            misc.writeToLogNoUsername('New Update! Please download on https://github.com/PCJones/ultimate-splinterlands-bot');
-        } else {
-            misc.writeToLogNoUsername('No update available');
-        }
-    })
+    misc.writeToLogNoUsername('------------------------------------------------------------------------------------------------');
+    misc.writeToLogNoUsername('Remember to check github to see if there is an update available. https://github.com/warcos2/splinterwar-bot');
     misc.writeToLogNoUsername('------------------------------------------------------------------------------------------------');
 }
 
@@ -431,8 +421,8 @@ async function startBotPlayMatch(page, myCards, quest, claimQuestReward, priorit
             }
         } else {
             if (apiResponse && JSON.stringify(apiResponse).includes('api limit reached')) {
-                misc.writeToLog('API limit per hour reached, using local backup!');
-                misc.writeToLog('Visit discord or telegram group to learn more about API limits: https://t.me/ultimatesplinterlandsbot and https://discord.gg/hwSr7KNGs9');
+                misc.writeToLog('API limit reached, using local backup!');
+                misc.writeToLog('Visit discord to learn more about API limits: https://discord.gg/8Kf3wuta5Z');
             } else {
                 misc.writeToLog('API failed, using local history with most cards used tactic');
             }
@@ -635,8 +625,8 @@ const sleepingTime = sleepingTimeInMinutes * 60000;
             }
             console.log('----------------------------------------------------------------------');
             console.log('Waiting for the next battle in', sleepingTime / 1000 / 60, ' minutes at ', new Date(Date.now() + sleepingTime).toLocaleString());
-            console.log(chalk.green('Interested in a bot that transfers all cards, dec and sps to your main account? Visit the discord or telegram!'));
-            console.log(chalk.green('Join the telegram group https://t.me/ultimatesplinterlandsbot and discord https://discord.gg/hwSr7KNGs9'));
+            console.log(chalk.green('Interested in other bots like autotransfer or autorental? Or maybe a paid api? Visit our discord!'));
+            console.log(chalk.green('Join our discord https://discord.gg/8Kf3wuta5Z'));
             console.log('--------------------------End of Battle--------------------------------');
             await new Promise(r => setTimeout(r, sleepingTime));
             resultAll = [];
