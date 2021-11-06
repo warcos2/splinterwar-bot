@@ -6,8 +6,8 @@ A multi-account bot for playing splinterlands. 100% free and open source.
 
 ## IMPORTANT:
 Currently there are 2 branches:
-- Master (this one): better overall stability and performance, but less updates.
-- Beta: more updates, but may have some bugs and degraded performance.
+- Master: better overall stability and performance, but less updates.
+- Beta (this one): more updates, but may have some bugs and degraded performance.
 
 ## Actual Features
 - Multiple accounts with only one instance.
@@ -29,6 +29,7 @@ Currently there are 2 branches:
 ## How to install
 - Download and install [NodeJs](https://nodejs.org/it/download/)
 - Download the [bot](https://github.com/warcos2/splinterwar-bot) (extract if its .zip)
+- If linux, git clone --branch beta https://github.com/warcos2/splinterwar-bot
 - Edit .env file (using notepad or nano)
 - On windows: Execute `install.bat` in bot folder
 - On MacOS/Linux: open terminal in bot folder and execute command `npm install`
