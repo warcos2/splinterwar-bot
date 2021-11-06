@@ -127,6 +127,8 @@ async function createBrowsers(count, headless) {
                 headless: headless,
                 args: ['--no-sandbox',
         '--disable-setuid-sandbox',
+        '--disable-features=IsolateOrigins',
+        '--disable-site-isolation-trials',
         '--disable-dev-shm-usage',
         '--disable-accelerated-2d-canvas',
         '--disable-canvas-aa', 
@@ -135,13 +137,14 @@ async function createBrowsers(count, headless) {
         '--no-first-run',
         '--no-zygote', 
         '--disable-dev-shm-usage', 
-        '--use-gl=swiftshader', 
+        '--use-gl=desktop', 
         // '--single-process', // <- this one doesn't works in Windows
         '--disable-gpu',
-        '--enable-webgl',
+        //'--enable-webgl',
         '--hide-scrollbars',
         '--mute-audio',
         '--disable-infobars',
+        '--enable-low-end-device-mode',
         '--disable-breakpad',
         '--disable-web-security']
     }); 
