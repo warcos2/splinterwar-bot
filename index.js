@@ -107,6 +107,19 @@ async function clickMenuFightButton(page) {
     }
 
 }
+// Beta skip quest
+    if(process.env.SKIP_QUEST && quest?.splinter && process.env.SKIP_QUEST.split(',').includes(quest?.splinter) && quest?.total !== quest?.completed) {
+        try {
+            await page.click('#quest_new_btn')
+                .then(async a=>{
+                    await page.reload();
+                    console.log('New quest requested')})
+                .catch(e=>console.log('Cannot click on new quest'))
+
+        } catch(e) {
+            console.log('Error while skipping new quest')
+        }
+    }
 
 // LOAD MY CARDS
 async function getCards() {
