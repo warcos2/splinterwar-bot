@@ -327,10 +327,10 @@ async function startBotPlayMatch(page, myCards, quest, claimQuestReward, priorit
                 await page.reload();
                 await page.waitForTimeout(10000);
             }
-            skipQuest();
         }
     } catch (e) {
         misc.writeToLog('No quest reward to be claimed waiting for the battle...')
+        skipQuest();
         questRewardAll.push(process.env.ACCUSERNAME + " Quest: " + chalk.yellow(Object.values(quest)[3].toString() + "/" + Object.values(quest)[2].toString()) + chalk.red(' No quest reward...'));
     }
 
