@@ -1,6 +1,6 @@
 {
   "name": "SplinterWar-bot",
-  "version": "1.0.1",
+  "version": "1.1",
   "description": "A multi-account bot for playing splinterlands.",
   "main": "index.js",
   "engines": {
