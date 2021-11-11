@@ -142,7 +142,7 @@ console.log('getting user quest info from splinterlands API...')
     }
 }
 
-await skipQuest();
+skipQuest();
 
 async function createBrowsers(count, headless) {
     let browsers = [];
