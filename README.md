@@ -24,7 +24,7 @@ Currently there are 2 branches:
 # Support / Community
 
 - [Discord](https://discord.gg/8Kf3wuta5Z)
-- Telegram: coming soon.
+- [Telegram](https://t.me/splinterwarbot)
 
 ## How to install
 - Download and install [NodeJs](https://nodejs.org/it/download/)
