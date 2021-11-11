@@ -12,7 +12,7 @@ const quests = require('./quests');
 const ask = require('./possibleTeams');
 const api = require('./api');
 const misc = require('./misc');
-const version = 0.42;
+const version = 1.1;
 let resultAll = [];
 let captureRateAll = [];
 let questRewardAll = [];
@@ -120,10 +120,11 @@ async function getQuest() {
     .catch(e => misc.writeToLog('No quest data, splinterlands API didnt respond, or you are wrongly using the email and password instead of username and posting key'))
 }
 
-// Beta skip quest
+/// Beta skip quest
     if(process.env.SKIP_QUEST && quest?.splinter && process.env.SKIP_QUEST.split(',').includes(quest?.splinter) && quest?.total !== quest?.completed) {
         try {
-            await page.click('#quest_new_btn')
+            //await - should be here but gives errors
+            page.click('#quest_new_btn')
                 .then(async a=>{
                     await page.reload();
                     console.log('New quest requested')})
