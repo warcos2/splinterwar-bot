@@ -120,19 +120,17 @@ async function getQuest() {
     .catch(e => misc.writeToLog('No quest data, splinterlands API didnt respond, or you are wrongly using the email and password instead of username and posting key'))
 }
 
+async function skipQuest() {
 console.log('getting user quest info from splinterlands API...')
-    const quest = 
-          // await - should be here but gives lots of errors
-    getQuest();
+    const quest = await getQuest();
     if(!quest) {
         console.log('Error for quest details. Splinterlands API didnt work or you used incorrect username, remove @ and dont use email')
     }
 
-// Beta skip quest
+// Main skip quest
     if(process.env.SKIP_QUEST && quest?.splinter && process.env.SKIP_QUEST.split(',').includes(quest?.splinter) && quest?.total !== quest?.completed) {
         try {
-            //await - should be here but gives lots of errors
-            page.click('#quest_new_btn')
+                    awaitpage.click('#quest_new_btn')
                 .then(async a=>{
                     await page.reload();
                     console.log('New quest requested')})
@@ -142,6 +140,9 @@ console.log('getting user quest info from splinterlands API...')
             console.log('Error while skipping new quest')
         }
     }
+}
+
+await skipQuest();
 
 async function createBrowsers(count, headless) {
     let browsers = [];
