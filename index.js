@@ -107,6 +107,19 @@ async function clickMenuFightButton(page) {
     }
 
 }
+
+// LOAD MY CARDS
+async function getCards() {
+    const myCards = await user.getPlayerCards(process.env.ACCUSERNAME, new Date(Date.now() - 86400000)) // 86400000 = 1 day in milliseconds
+        return myCards;
+}
+
+async function getQuest() {
+    return quests.getPlayerQuest(process.env.ACCUSERNAME.split('@')[0])
+    .then(x => x)
+    .catch(e => misc.writeToLog('No quest data, splinterlands API didnt respond, or you are wrongly using the email and password instead of username and posting key'))
+}
+
 // Beta skip quest
     if(process.env.SKIP_QUEST && quest?.splinter && process.env.SKIP_QUEST.split(',').includes(quest?.splinter) && quest?.total !== quest?.completed) {
         try {
@@ -120,18 +133,6 @@ async function clickMenuFightButton(page) {
             console.log('Error while skipping new quest')
         }
     }
-
-// LOAD MY CARDS
-async function getCards() {
-    const myCards = await user.getPlayerCards(process.env.ACCUSERNAME, new Date(Date.now() - 86400000)) // 86400000 = 1 day in milliseconds
-        return myCards;
-}
-
-async function getQuest() {
-    return quests.getPlayerQuest(process.env.ACCUSERNAME.split('@')[0])
-    .then(x => x)
-    .catch(e => misc.writeToLog('No quest data, splinterlands API didnt respond, or you are wrongly using the email and password instead of username and posting key'))
-}
 
 async function createBrowsers(count, headless) {
     let browsers = [];
