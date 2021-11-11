@@ -142,8 +142,6 @@ console.log('getting user quest info from splinterlands API...')
     }
 }
 
-skipQuest();
-
 async function createBrowsers(count, headless) {
     let browsers = [];
     for (let i = 0; i < count; i++) {
@@ -329,6 +327,7 @@ async function startBotPlayMatch(page, myCards, quest, claimQuestReward, priorit
                 await page.reload();
                 await page.waitForTimeout(10000);
             }
+            skipQuest();
         }
     } catch (e) {
         misc.writeToLog('No quest reward to be claimed waiting for the battle...')
