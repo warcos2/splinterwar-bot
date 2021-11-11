@@ -121,7 +121,9 @@ async function getQuest() {
 }
 
 console.log('getting user quest info from splinterlands API...')
-    const quest = await getQuest();
+    const quest = 
+          // await - should be here but gives lots of errors
+    getQuest();
     if(!quest) {
         console.log('Error for quest details. Splinterlands API didnt work or you used incorrect username, remove @ and dont use email')
     }
