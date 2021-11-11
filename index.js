@@ -120,7 +120,13 @@ async function getQuest() {
     .catch(e => misc.writeToLog('No quest data, splinterlands API didnt respond, or you are wrongly using the email and password instead of username and posting key'))
 }
 
-/// Beta skip quest
+console.log('getting user quest info from splinterlands API...')
+    const quest = await getQuest();
+    if(!quest) {
+        console.log('Error for quest details. Splinterlands API didnt work or you used incorrect username, remove @ and dont use email')
+    }
+
+// Beta skip quest
     if(process.env.SKIP_QUEST && quest?.splinter && process.env.SKIP_QUEST.split(',').includes(quest?.splinter) && quest?.total !== quest?.completed) {
         try {
             //await - should be here but gives errors
