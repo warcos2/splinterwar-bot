@@ -1,13 +1,16 @@
 {
-  "name": "ultimate-splinterlands-bot",
-  "version": "0.4.2",
-  "description": "A fast, free, multi-account splinderlands bot",
+  "name": "SplinterWar-bot",
+  "version": "1.0.1",
+  "description": "A multi-account bot for playing splinterlands.",
   "main": "index.js",
+  "engines": {
+  "node": ">=14.18.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
-  "author": "PC Jones",
+  "author": "Warcos",
   "license": "GPL-3.0",
   "dependencies": {
     "chalk": "^4.1.2",
@@ -22,14 +25,14 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PCJones/ultimate-splinterlands-bot.git"
+    "url": "git+https://github.com/warcos2/splinterwar-bot.git"
   },
   "keywords": [
     "bot",
     "splinterlands"
   ],
   "bugs": {
-    "url": "https://github.com/PCJones/ultimate-splinterlands-bot/issues"
+    "url": "https://github.com/warcos2/splinterwar-bot/issues"
   },
-  "homepage": "https://github.com/PCJones/ultimate-splinterlands-bot#readme"
+  "homepage": "https://github.com/warcos2/splinterwar-bot#readme"
 }
