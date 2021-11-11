@@ -129,7 +129,7 @@ console.log('getting user quest info from splinterlands API...')
 // Beta skip quest
     if(process.env.SKIP_QUEST && quest?.splinter && process.env.SKIP_QUEST.split(',').includes(quest?.splinter) && quest?.total !== quest?.completed) {
         try {
-            //await - should be here but gives errors
+            //await - should be here but gives lots of errors
             page.click('#quest_new_btn')
                 .then(async a=>{
                     await page.reload();
