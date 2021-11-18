@@ -19,7 +19,7 @@ Currently there are 2 branches:
 - Support for the private API of the original bot.
 
 ## Next Features
-- **Coming Soon**: Statistics on how each account is performing
+- **Coming Soon**: Auto-skip quests selected by user.
 
 # Support / Community
 
